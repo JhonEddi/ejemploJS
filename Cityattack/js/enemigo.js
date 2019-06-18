@@ -9,10 +9,10 @@ function Enemigo(x,y){
 	else
 		this.img = $("#enemigo_2")[0];		
 	this.x = aleatorio(0,620);
-	this.y = aleatorio(100,330);
+	this.y = aleatorio(140,340);
 	this.velocidad = 0;
 	while(this.velocidad == 0)
-		this.velocidad=aleatorio(-3,3);
+		this.velocidad=aleatorio(-10,10);
 			
 	this.dibujar = function(ctx){
 		var img = this.img;
